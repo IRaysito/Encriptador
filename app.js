@@ -2,12 +2,6 @@ const encriptador = document.querySelector(".encriptador");
 const mensajeEncriptado = document.querySelector(".encriptacion");
 const texto = encriptador.value;
 
-// La letra "e" es convertida para "enter"
-// La letra "i" es convertida para "imes"
-// La letra "a" es convertida para "ai"
-// La letra "o" es convertida para "ober"
-// La letra "u" es convertida para "ufat"
-
 function removerAtributo(clase,atributo) {
     document.querySelector(clase).removeAttribute(atributo);
 }
