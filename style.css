@@ -1,6 +1,6 @@
 body {
     background: linear-gradient( rgba(243, 245, 252, 1), rgb(184, 183, 238));
-    width: auto;
+    width: 100%;
     margin: 0;
     font-family: "Inter", sans-serif;
     display: grid;
@@ -320,10 +320,10 @@ body {
     opacity: 60%;
 }
 
-@media (700px <= width <= 1200px) {
+@media screen and (max-width: 1200px) {
     body {
-        width: auto;
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
         font-family: "Inter", sans-serif;
         display: flex;
         flex-direction: column;
@@ -340,7 +340,7 @@ body {
     }
 
     .main {
-        margin: 0 40px;
+        margin: 0 auto;
         justify-self: center;
         width: 680px;
     }
@@ -348,6 +348,7 @@ body {
     .input-encriptador {
         display: flex;
         flex-direction: row;
+        margin: 0 auto;
     }
     
     .input-encriptador textarea {
@@ -563,8 +564,9 @@ body {
     }
     
     .footer {
-        padding: 11.35px;
-        width: 1200px;
+        padding: 11.35px 0;
+        margin: 0 auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -625,14 +627,14 @@ body {
     }
 }
 
-@media (width < 700px) {
+@media screen and (max-width: 700px) {
     body {
-        margin: 0;
+        margin: 0 auto;
         font-family: "Inter", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        width: 100%;
     }
     
     .header {
@@ -645,7 +647,7 @@ body {
     }
 
     .main {
-        margin: 0 40px;
+        margin: 0 auto;
         justify-self: center;
         width: 343px;
     }
@@ -656,6 +658,7 @@ body {
     }
     
     .encriptador{
+        margin: 0 auto;
         font-family: "Inter", sans-serif;
         color: rgba(10, 56, 113, 1);
         overflow: auto;
@@ -678,7 +681,7 @@ body {
     }
     
     .contenedor {
-        margin-bottom: 40px;
+        margin: 0 auto 40px auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -785,13 +788,12 @@ body {
     
     .aside {
         display: flex;
-        flex-wrap: wrap;
         width: 327px;
         justify-items: center;
         align-items: center;
         background: white no-repeat;
         border-radius: 32px;
-        margin: 40px;
+        margin: 40px auto;
         box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
     }
     
@@ -859,14 +861,15 @@ body {
     }
     
     .footer {
-        padding: 15px;
-        width: 700px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 15px 0;
         background-color: rgb(184, 183, 238);
         display: grid;
-        grid-template-columns: 120px 120px;
+        grid-template-columns: 125px 125px;
         grid-template-rows: 1fr 1fr;
         place-content: center;
-        gap: 10px 0;
+        gap: 10px 40px;
         align-items: center;   
         justify-items: center;
         background-color: rgb(187, 186, 240);
@@ -897,7 +900,11 @@ body {
         text-align: center;
         margin-right: 10px;
     }
-    
+
+    .linkedin {
+        justify-self: end;
+    }
+
     .linkedin img {
         width: 48px;
         height: 48px;
@@ -910,6 +917,10 @@ body {
         opacity: 60%;
     }
     
+    .github {
+        justify-self: start;
+    }
+
     .github img {
         width: 37px;
         height: 37px;
