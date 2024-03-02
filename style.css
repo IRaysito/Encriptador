@@ -553,7 +553,7 @@ body {
         line-height: 28.8px;
     }
     
-    .aside :nth-child(5) {
+    .aside :last-child {
         margin: 16px 0 32px 0;
         width: auto;
         height: 24px;
