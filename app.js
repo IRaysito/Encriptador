@@ -17,7 +17,7 @@ function botonEncriptador() {
     document.getElementById("boton-2").removeAttribute("disabled")
     addAtributo(".mensaje-1","hidden","true")
     addAtributo(".mensaje-2","hidden","true")
-    addAtributo(".muñeco","hidden","true")
+    addAtributo(".muneco","hidden","true")
     document.getElementById("boton-2").classList.add("boton-2")
     const textoEncriptado = encriptar(encriptador.value);
     mensajeEncriptado.value = textoEncriptado;
