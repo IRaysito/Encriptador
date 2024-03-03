@@ -26,7 +26,7 @@ function botonEncriptador() {
 }
 
 function encriptar(stringEncriptado){
-    let matrizCodigo = [["u", "ufat"],["o", "ober"],["i", "imes"],["e", "enter"],["a", "ai"]];
+    let matrizCodigo = [["a", "ai"],["e", "enter"],["i", "imes"],["o", "ober"],["u", "ufat"]];
     stringEncriptado = stringEncriptado.toLowerCase();
 
     for (let i = 0; i < matrizCodigo.length; i++) {
@@ -44,7 +44,7 @@ function botonDesencriptador() {
 }
 
 function desencriptar(stringDesencriptado){
-    let matrizCodigo = [["u", "ufat"],["o", "ober"],["i", "imes"],["e", "enter"],["a", "ai"]];
+    let matrizCodigo = [["a", "ai"],["e", "enter"],["i", "imes"],["o", "ober"],["u", "ufat"]];
     stringDesencriptado = stringDesencriptado.toLowerCase();
 
     for (let i = 0; i < matrizCodigo.length; i++) {
